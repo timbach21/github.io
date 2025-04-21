@@ -264,6 +264,89 @@ footer .fa-heart {
     color: #ef4444;
 }
 
+.blog-header, .blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-header {
+    margin-top: 120px; /* Push down below navbar */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.blog-list {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-preview {
+    background: var(--gray-100);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 100%;
+    text-align: center;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.read-more:hover {
+    color: var(--secondary-color);
+}
+
+.post-meta {
+    color: var(--gray-700);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.adventure-container {
+    max-width: 800px;
+    margin: 120px auto 0 auto; /* push down below navbar */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.adventure-container h1,
+.adventure-container h2,
+.adventure-container h3,
+.adventure-container p,
+.adventure-container ul,
+.adventure-container pre {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.adventure-container pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.adventure-container code {
+    font-family: monospace;
+}
+
+.adventure-container .section {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
